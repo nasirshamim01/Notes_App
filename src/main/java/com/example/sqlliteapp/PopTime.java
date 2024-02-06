@@ -44,12 +44,11 @@ public class PopTime extends DialogFragment{
 
         if(!time_get_time.equalsIgnoreCase("ignore")) {
             String[] time_arr = time_get_time.split(":", 2);
-//            String[] date_arr = date_get_time.split("-", 3);
+
             for (String a : time_arr)
                 System.out.println("Holathis1" + a);
 
-//            for (String b : date_arr)
-//                System.out.println("Holathis2" + b);
+/
 
             int Hour = Integer.parseInt(time_arr[0]);
             int Minute = Integer.parseInt(time_arr[1]);
@@ -80,12 +79,6 @@ public class PopTime extends DialogFragment{
 
 
                 PopInfo maa3=new PopInfo();
-//                maa3.setTime_pass(timeOn);
-//                Bundle bundle1 = new Bundle();
-//                bundle1.putString("time_value", RemTime.getText().toString());
-//                bundle1.putString("date_value", RemDate.getText().toString());
-//
-//                popInfo.setArguments(bundle1);
                 Bundle bundleTime_back = new Bundle();
                 bundleTime_back.putString("time_value",timeOn);
                 bundleTime_back.putString("date_value", date_get_time);
